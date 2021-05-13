@@ -55,3 +55,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (min-width: 900px) {
+    .card-area {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+    }
+}
