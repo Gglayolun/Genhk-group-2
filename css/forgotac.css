@@ -102,6 +102,7 @@ form input[type="password"] {
 	padding: 1em;
 	font-size: 0.95rem;
 	color: #3a4660;
+	outline: none;
 }
 
 form input[type="text"] {

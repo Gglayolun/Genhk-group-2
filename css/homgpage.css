@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: blueviolet;
+    height: 40px;
+}
+
+.nav li {
+    font-size: 30px;
+    list-style-type: none;
+}
+
+.secNav {
+    height: 35px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.secNav li {
+    list-style-type: none;
+}
+
+.status-name {
+    display: flex;
+    justify-content: center;
+}
+
+
+.card-area {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-left: 20px;
+    margin-bottom: 5px;
+    background-color: yellow;
+    height: 400px;
+    width: 400px;
+}
+
+.card-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-foot {
+    display: flex;
+    justify-content: space-between;
+}
