@@ -43,19 +43,31 @@
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">Add Task</h5>
                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                           <form>
                             <div class="mb-3">
-                              <label for="recipient-name" class="col-form-label">Recipient:</label>
-                              <input type="text" class="form-control" id="recipient-name">
+                              <label for="title" class="col-form-label">Title:</label>
+                              <input type="text" class="form-control" id="title">
                             </div>
                             <div class="mb-3">
-                              <label for="message-text" class="col-form-label">Message:</label>
-                              <textarea class="form-control" id="message-text"></textarea>
+                              <label for="context" class="col-form-label">Context:</label>
+                              <textarea type="text" class="form-control" id="context"></textarea>
                             </div>
+                            <div class="mb-3">
+                                <label for="status" class="col-form-label">Status:</label>
+                                <input type="text" class="form-control" id="status"></input>
+                              </div>
+                              <div class="mb-3">
+                                <label for="due-date" class="col-form-label">Due date:</label>
+                                <input type="date" class="form-control" id="due-date"></input>
+                              </div>
+                              <div class="mb-3">
+                                <label for="assigntowho" class="col-form-label">Assign to:</label>
+                                <input type="text" form-control" id="assigntowho"></input>
+                              </div>
                           </form>
                         </div>
                         <div class="modal-footer">
@@ -90,7 +102,49 @@
                                 <i class="fas fa-ellipsis-h"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                              <li><a class="dropdown-item" href="#">Edit</a></li>
+                              <li>
+                                  <button type="button" class="btn dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
+                                    Edit
+                                </button>
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title" id="exampleModalLabel">Edit Tsk</h5>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          <form>
+                                            <div class="mb-3">
+                                              <label for="edit-title" class="col-form-label">Title:</label>
+                                              <input type="text" class="form-control" id="edit-title">
+                                            </div>
+                                            <div class="mb-3">
+                                              <label for="edit-context" class="col-form-label">Context:</label>
+                                              <textarea type="text" class="form-control" id="edit-context"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="edit-status" class="col-form-label">Status:</label>
+                                                <input type="text" class="form-control" id="edit-status"></input>
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="edit-due-date" class="col-form-label">Due date:</label>
+                                                <input type="date" class="form-control" id="edit-due-date"></input>
+                                              </div>
+                                              <div class="mb-3">
+                                                <label for="edit-assigntowho" class="col-form-label">Assign to:</label>
+                                                <input type="text" form-control" id="edit-assigntowho"></input>
+                                              </div>
+                                          </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Send message</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </li>
                               <li><a class="dropdown-item" href="#">Delete</a></li>
                             </ul>
                           </div>
