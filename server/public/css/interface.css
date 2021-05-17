@@ -1,0 +1,222 @@
+body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0 0;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    height: 138px; 
+    margin: 0;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/Visions\ of\ Grandeur.jpg');
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header .logo{
+    display: flex;
+    flex:auto;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    width: 266px;
+    height: 138px;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+header .button-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.alarm-button {
+    padding: 8px 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 5%;
+    border: none;
+}
+
+.alarm-button:hover{
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255);
+}
+
+.user-button{
+    padding: 8px 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 5px;
+    border: none;
+}
+
+.user-button:hover{
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255);
+}
+
+header i{
+    font-size: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bar{
+    background-color: rgba(196, 196, 196, 0.5);
+    width: 370px;
+    height: 886px;
+    left: 0px;
+    top: 138px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.sort{
+    width: 370px;
+    height: 61px;
+    font-size: 48px;
+    font-family: Zilla Slab;
+}
+
+.file{
+    display: flex;
+    width: 370px;
+    height: 72px;
+    flex-direction: row;
+    align-content:stretch;
+    justify-content: space-around;
+}
+
+.file p {
+    display: flex;
+}
+
+.file:hover{
+    background-color: #c4c4c4;
+}
+
+.side-bar i {
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin:5px;
+
+}
+
+.side-bar p{
+    font-family: Zilla Slab;
+    font-size: 40px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.creater-icon i {
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    margin:5px;
+
+}
+
+.creater-icon p{
+    font-family: Zilla Slab;
+    font-size: 40px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+}
+
+.edit{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.edit-button{
+    display: flex;
+    flex-direction: row;
+    width: 259px;
+    height: 100px;
+    border-radius: 45px;
+    background-image: url(Visions\ of\ Grandeur.jpg);
+    justify-content: space-around;
+    margin:20px 10px;
+}
+
+.edit-button h2{
+    font-size: 48;
+    font-family: Zilla Slab;
+    font-size: 40px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    margin: 20px;
+}
+    
+.edit-button i{
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    margin:0px;
+}
+
+.last-edit{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.photo img{
+    width: auto;
+    height: 424px;
+}
+
+.text{
+    
+    border-style: solid;
+    border-color: black;
+}
+
+.right-side-bar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    margin: 10px;
+}
+  
+
+
+.i-circle{
+    font-size: 100px;
+    justify-self: end;
+}
